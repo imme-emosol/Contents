@@ -180,3 +180,7 @@ Manually works for Debian, Fedora and Archlinux.
         gtk-application-prefer-dark-theme=1
 
 3. Follow steps 6 and 7 in: Using `Gnome-Tweak-Tool`
+
+N.B. if Qubes' Qube Manager did not go dark for you:
+
+In Qubes OS 4.1, for Qubes' Qube Manager it is currently needed to install qt5ct & qt5-qtstyleplugins in `dom0` and instruct qt to use that theming, adding `QT_QPA_PLATFORMTHEME=qt5ct` to `/etc/profile.d/sh.local`.
